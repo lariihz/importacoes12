@@ -1,0 +1,284 @@
+NUMERO 8 
+
+A)
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    const int tamanho = 5; // Defina o tamanho do vetor
+    int vetor[tamanho] = {10, 20, 30, 40, 50}; // Inicialização do vetor
+
+    cout << "Valores dos elementos do vetor:" << endl;
+    for (int i = 0; i < tamanho; ++i) {
+        cout << "Elemento " << i << ": " << vetor[i] << endl;
+    }
+
+    return 0;
+}
+
+
+B)
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    const int tamanho = 5;
+    double vetor[tamanho] = {10.5, 20.75, 30.2, 40.3, 50.1}; // Inicialização do vetor
+
+    double soma = 0.0;
+    for (int i = 0; i < tamanho; ++i) {
+        soma += vetor[i];
+    }
+
+    double media = soma / tamanho;
+    cout << "A média dos valores do vetor é: " << media << endl;
+
+    return 0;
+}
+
+
+C)
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    const int tamanho = 5;
+    int vetor[tamanho] = {10, 20, 5, 40, 30}; // Inicialização do vetor
+
+    int maior = vetor[0];
+    for (int i = 1; i < tamanho; ++i) {
+        if (vetor[i] > maior) {
+            maior = vetor[i];
+        }
+    }
+
+    cout << "O maior valor do vetor é: " << maior << endl;
+
+    return 0;
+}
+
+
+D)
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    const int tamanho = 5;
+    int vetor[tamanho] = {10, 20, 5, 40, 30}; // Inicialização do vetor
+
+    int menor = vetor[0];
+    for (int i = 1; i < tamanho; ++i) {
+        if (vetor[i] < menor) {
+            menor = vetor[i];
+        }
+    }
+
+    cout << "O menor valor do vetor é: " << menor << endl;
+
+    return 0;
+}
+
+E) 
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    const int tamanho = 5;
+    int vetor[tamanho] = {10, 20, 5, 40, 30}; // Inicialização do vetor
+
+    // Ordenação em ordem decrescente (algoritmo de bolha)
+    for (int i = 0; i < tamanho - 1; ++i) {
+        for (int j = 0; j < tamanho - i - 1; ++j) {
+            if (vetor[j] < vetor[j + 1]) {
+                // Troca
+                int temp = vetor[j];
+                vetor[j] = vetor[j + 1];
+                vetor[j + 1] = temp;
+            }
+        }
+    }
+
+    cout << "Vetor em ordem decrescente:" << endl;
+    for (int i = 0; i < tamanho; ++i) {
+        cout << vetor[i] << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
+
+
+F)
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    const int tamanho = 5;
+    int vetor[tamanho] = {10, 20, 5, 40, 30}; // Inicialização do vetor
+
+    // Ordenação em ordem crescente (algoritmo de bolha)
+    for (int i = 0; i < tamanho - 1; ++i) {
+        for (int j = 0; j < tamanho - i - 1; ++j) {
+            if (vetor[j] > vetor[j + 1]) {
+                // Troca
+                int temp = vetor[j];
+                vetor[j] = vetor[j + 1];
+                vetor[j + 1] = temp;
+            }
+        }
+    }
+
+    cout << "Vetor em ordem crescente:" << endl;
+    for (int i = 0; i < tamanho; ++i) {
+        cout << vetor[i] << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
+
+
+G)
+
+#include <iostream>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+int main() {
+    const int tamanho = 5;
+    string nomes[tamanho];
+
+    cout << "Digite 5 nomes:" << endl;
+    for (int i = 0; i < tamanho; ++i) {
+        cout << "Nome " << i + 1 << ": ";
+        cin >> nomes[i];
+    }
+
+    // Ordenação dos nomes
+    sort(nomes, nomes + tamanho);
+
+    cout << "Nomes em ordem alfabética:" << endl;
+    for (int i = 0; i < tamanho; ++i) {
+        cout << nomes[i] << endl;
+    }
+
+    return 0;
+}
+
+
+H)
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    const int numMercadorias = 100;
+    double precoCompra[numMercadorias], precoVenda[numMercadorias];
+    int lucroMenor10 = 0, lucroEntre10e20 = 0, lucroMaior20 = 0;
+
+    // Leitura dos preços
+    for (int i = 0; i < numMercadorias; ++i) {
+        cout << "Mercadoria " << i + 1 << ":" << endl;
+        cout << "Preço de compra: ";
+        cin >> precoCompra[i];
+        cout << "Preço de venda: ";
+        cin >> precoVenda[i];
+
+        // Cálculo do lucro
+        double lucro = ((precoVenda[i] - precoCompra[i]) / precoCompra[i]) * 100;
+
+        if (lucro < 10) {
+            lucroMenor10++;
+        } else if (lucro <= 20) {
+            lucroEntre10e20++;
+        } else {
+            lucroMaior20++;
+        }
+    }
+
+    cout << "Número de mercadorias com lucro < 10%: " << lucroMenor10 << endl;
+    cout << "Número de mercadorias com 10% <= lucro <= 20%: " << lucroEntre10e20 << endl;
+    cout << "Número de mercadorias com lucro > 20%: " << lucroMaior20 << endl;
+
+    return 0;
+}
+
+I)
+
+#include <iostream>
+using namespace std;
+
+const int TOTAL_MESAS = 30;
+const int LUGARES_POR_MESA = 5;
+
+int main() {
+    int mesas[TOTAL_MESAS] = {LUGARES_POR_MESA}; // Inicializa todas as mesas com 5 lugares
+    int totalLugaresOcupados = 0;
+
+    while (true) {
+        int codigoMesa, lugaresDesejados;
+        cout << "Digite o código da mesa (100 a 129) ou 0 para sair: ";
+        cin >> codigoMesa;
+
+        if (codigoMesa == 0) {
+            break;
+        }
+
+        if (codigoMesa < 100 || codigoMesa > 129) {
+            cout << "Código de mesa inválido." << endl;
+            continue;
+        }
+
+        int indiceMesa = codigoMesa - 100;
+        if (indiceMesa >= TOTAL_MESAS || mesas[indiceMesa] < 0) {
+            cout << "Mesa não disponível ou código inválido." << endl;
+            continue;
+        }
+
+        cout << "Digite a quantidade de lugares desejados: ";
+        cin >> lugaresDesejados;
+
+        if (lugaresDesejados <= 0 || lugaresDesejados > mesas[indiceMesa]) {
+            cout << "Quantidade de lugares inválida." << endl;
+            continue;
+        }
+
+        mesas[indiceMesa] -= lugaresDesejados;
+        totalLugaresOcupados += lugaresDesejados;
+
+        if (totalLugaresOcupados >= TOTAL_MESAS * LUGARES_POR_MESA) {
+            cout << "Todos os lugares estão ocupados." << endl;
+            break;
+        }
+
+        cout << "Reserva feita com sucesso." << endl;
+    }
+
+    return 0;
+}
+
+
+J) 
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    const int tamanho = 100;
+    double numeros[tamanho];
+    double soma = 0.0;
+
+    cout << "Digite 100 números reais:" << endl;
+    for (int i = 0; i < tamanho; ++i) {
+        cin >> numeros[i];
+        soma += numeros[i];
+    }
+
+    double media = soma /

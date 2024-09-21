@@ -1,0 +1,224 @@
+NUMERO 5 
+
+A)
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    for (int i = 0; i <= 100; i += 2) {
+        cout << i << endl;
+    }
+    return 0;
+}
+
+
+B)
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int limite;
+    cout << "Digite um número inteiro positivo: ";
+    cin >> limite;
+    
+    if (limite < 0) {
+        cout << "O número deve ser positivo." << endl;
+        return 1;
+    }
+
+    for (int i = 0; i <= limite; i += 2) {
+        cout << i << endl;
+    }
+    return 0;
+}
+
+
+C)
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string palavra;
+    cout << "Digite uma palavra: ";
+    cin >> palavra;
+
+    for (char letra : palavra) {
+        cout << letra << endl;
+    }
+    return 0;
+}
+
+
+D) 
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int limite;
+    cout << "Digite um número inteiro positivo: ";
+    cin >> limite;
+
+    if (limite < 1) {
+        cout << "O número deve ser positivo e maior que 0." << endl;
+        return 1;
+    }
+
+    int soma = 0;
+    for (int i = 1; i <= limite; ++i) {
+        soma += i;
+    }
+    cout << "A soma dos números entre 1 e " << limite << " é: " << soma << endl;
+    return 0;
+}
+
+
+E)
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int numero;
+    cout << "Digite um número inteiro: ";
+    cin >> numero;
+
+    if (numero <= 1) {
+        cout << numero << " não é um número primo." << endl;
+        return 0;
+    }
+
+    bool primo = true;
+    for (int i = 2; i <= numero / 2; ++i) {
+        if (numero % i == 0) {
+            primo = false;
+            break;
+        }
+    }
+
+    if (primo) {
+        cout << numero << " é um número primo." << endl;
+    } else {
+        cout << numero << " não é um número primo." << endl;
+    }
+
+    return 0;
+}
+
+
+F)
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, numero, maior;
+    cout << "Quantos números você vai inserir? ";
+    cin >> n;
+
+    if (n <= 0) {
+        cout << "O número de entradas deve ser positivo." << endl;
+        return 1;
+    }
+
+    cout << "Digite um número: ";
+    cin >> numero;
+    maior = numero;
+
+    for (int i = 1; i < n; ++i) {
+        cout << "Digite um número: ";
+        cin >> numero;
+        if (numero > maior) {
+            maior = numero;
+        }
+    }
+
+    cout << "O maior número inserido é: " << maior << endl;
+    return 0;
+}
+
+
+G)
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    for (int i = 5; i <= 10; ++i) {
+        cout << "Tabuada do " << i << ":" << endl;
+        for (int j = 1; j <= 10; ++j) {
+            cout << i << " x " << j << " = " << i * j << endl;
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
+
+H)
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int numero;
+    cout << "Digite um número inteiro positivo: ";
+    cin >> numero;
+
+    if (numero <= 0) {
+        cout << "O número deve ser positivo." << endl;
+        return 1;
+    }
+
+    cout << "Os divisores de " << numero << " são: ";
+    for (int i = 1; i <= numero; ++i) {
+        if (numero % i == 0) {
+            cout << i << " ";
+        }
+    }
+    cout << endl;
+    return 0;
+}
+
+I)
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    bool primo;
+
+    for (int num = 2; num <= 100; ++num) {
+        primo = true;
+        for (int i = 2; i <= num / 2; ++i) {
+            if (num % i == 0) {
+                primo = false;
+                break;
+            }
+        }
+        if (primo) {
+            cout << num << " ";
+        }
+    }
+    cout << endl;
+    return 0;
+}
+
+
+J)
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int soma = 0;
+    for (int i = 2; i <= 100; i += 2) {
+        soma += i;
+    }
+    cout << "A soma dos números pares entre 1 e 100 é: " << soma << endl;
+    return 0;
+}

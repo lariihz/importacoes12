@@ -1,0 +1,731 @@
+NUMERO 3 
+
+A) 
+
+#include <iostream>
+
+int main() {
+    // Declaração das variáveis para armazenar os números
+    int numero1, numero2;
+
+    // Solicita ao usuário para digitar o primeiro número
+    std::cout << "Digite o primeiro número inteiro: ";
+    std::cin >> numero1;
+
+    // Solicita ao usuário para digitar o segundo número
+    std::cout << "Digite o segundo número inteiro: ";
+    std::cin >> numero2;
+
+    // Verifica se o primeiro número é maior que o segundo
+    if (numero1 > numero2) {
+        std::cout << "O primeiro número (" << numero1 << ") é maior que o segundo número (" << numero2 << ")." << std::endl;
+    } else {
+        std::cout << "O primeiro número (" << numero1 << ") não é maior que o segundo número (" << numero2 << ")." << std::endl;
+    }
+
+    return 0;
+}
+
+B)  
+
+#include <iostream>
+
+int main() {
+    // Declaração das variáveis para armazenar os números
+    int numero1, numero2;
+
+    // Solicita ao usuário para digitar o primeiro número
+    std::cout << "Digite o primeiro número inteiro: ";
+    std::cin >> numero1;
+
+    // Solicita ao usuário para digitar o segundo número
+    std::cout << "Digite o segundo número inteiro: ";
+    std::cin >> numero2;
+
+    // Verifica se o primeiro número é menor que o segundo
+    if (numero1 < numero2) {
+        std::cout << "O primeiro número (" << numero1 << ") é menor que o segundo número (" << numero2 << ")." << std::endl;
+    } else {
+        std::cout << "O primeiro número (" << numero1 << ") não é menor que o segundo número (" << numero2 << ")." << std::endl;
+    }
+
+    return 0;
+}
+
+C) 
+
+#include <iostream>
+
+int main() {
+    // Declaração das variáveis para armazenar os números
+    int numero1, numero2;
+
+    // Solicita ao usuário para digitar o primeiro número
+    std::cout << "Digite o primeiro número inteiro: ";
+    std::cin >> numero1;
+
+    // Solicita ao usuário para digitar o segundo número
+    std::cout << "Digite o segundo número inteiro: ";
+    std::cin >> numero2;
+
+    // Verifica se os dois números são iguais
+    if (numero1 == numero2) {
+        std::cout << "Os dois números (" << numero1 << " e " << numero2 << ") são iguais." << std::endl;
+    } else {
+        std::cout << "Os dois números (" << numero1 << " e " << numero2 << ") não são iguais." << std::endl;
+    }
+
+    return 0;
+}
+
+D)
+
+#include <iostream>
+
+int main() {
+    // Declaração das variáveis para armazenar os números
+    int numero1, numero2, numero3;
+
+    // Solicita ao usuário para digitar o primeiro número
+    std::cout << "Digite o primeiro número inteiro: ";
+    std::cin >> numero1;
+
+    // Solicita ao usuário para digitar o segundo número
+    std::cout << "Digite o segundo número inteiro: ";
+    std::cin >> numero2;
+
+    // Solicita ao usuário para digitar o terceiro número
+    std::cout << "Digite o terceiro número inteiro: ";
+    std::cin >> numero3;
+
+    // Verifica se o primeiro número é menor que o segundo e maior que o terceiro
+    if (numero1 < numero2 && numero1 > numero3) {
+        std::cout << "O primeiro número (" << numero1 << ") é menor que o segundo número (" << numero2 << ") e maior que o terceiro número (" << numero3 << ")." << std::endl;
+    } else {
+        std::cout << "O primeiro número (" << numero1 << ") não é menor que o segundo número (" << numero2 << ") e maior que o terceiro número (" << numero3 << ")." << std::endl;
+    }
+
+    return 0;
+}
+
+
+E)
+
+#include <iostream>
+
+int main() {
+    // Declaração das variáveis para armazenar os números reais
+    double numero1, numero2;
+
+    // Solicita ao usuário para digitar o primeiro número
+    std::cout << "Digite o primeiro número real: ";
+    std::cin >> numero1;
+
+    // Solicita ao usuário para digitar o segundo número
+    std::cout << "Digite o segundo número real: ";
+    std::cin >> numero2;
+
+    // Verifica se o primeiro número é maior ou igual ao segundo
+    if (numero1 >= numero2) {
+        std::cout << "O primeiro número (" << numero1 << ") é maior ou igual ao segundo número (" << numero2 << ")." << std::endl;
+    } else {
+        std::cout << "O primeiro número (" << numero1 << ") não é maior ou igual ao segundo número (" << numero2 << ")." << std::endl;
+    }
+
+    return 0;
+}
+
+F)
+
+#include <iostream>
+
+int main() {
+    // Declaração da variável para armazenar o número
+    int numero;
+
+    // Solicita ao usuário para digitar um número inteiro
+    std::cout << "Digite um número inteiro: ";
+    std::cin >> numero;
+
+    // Verifica se o número é par
+    if (numero % 2 == 0) {
+        std::cout << "O número " << numero << " é par." << std::endl;
+    } else {
+        std::cout << "O número " << numero << " não é par." << std::endl;
+    }
+
+    return 0;
+}
+
+G)
+
+#include <iostream>
+
+int main() {
+    // Declaração da variável para armazenar o número
+    int numero;
+
+    // Solicita ao usuário para digitar um número inteiro
+    std::cout << "Digite um número inteiro: ";
+    std::cin >> numero;
+
+    // Verifica se o número é ímpar
+    if (numero % 2 != 0) {
+        std::cout << "O número " << numero << " é ímpar." << std::endl;
+    } else {
+        std::cout << "O número " << numero << " não é ímpar." << std::endl;
+    }
+
+    return 0;
+}
+
+H)
+
+#include <iostream>
+
+int main() {
+    // Declaração da variável para armazenar o ano
+    int ano;
+
+    // Solicita ao usuário para digitar um ano
+    std::cout << "Digite um ano: ";
+    std::cin >> ano;
+
+    // Verifica se o ano é bissexto
+    if ((ano % 4 == 0 && ano % 100 != 0) || (ano % 400 == 0)) {
+        std::cout << "O ano " << ano << " é bissexto." << std::endl;
+    } else {
+        std::cout << "O ano " << ano << " não é bissexto." << std::endl;
+    }
+
+    return 0;
+}
+
+
+I)
+
+#include <iostream>
+
+int main() {
+    // Declaração das variáveis para armazenar os números reais
+    double numero1, numero2;
+
+    // Solicita ao usuário para digitar o primeiro número
+    std::cout << "Digite o primeiro número real: ";
+    std::cin >> numero1;
+
+    // Solicita ao usuário para digitar o segundo número
+    std::cout << "Digite o segundo número real: ";
+    std::cin >> numero2;
+
+    // Verifica se o primeiro número é menor ou igual ao segundo
+    if (numero1 <= numero2) {
+        std::cout << "O primeiro número (" << numero1 << ") é menor ou igual ao segundo número (" << numero2 << ")." << std::endl;
+    } else {
+        std::cout << "O primeiro número (" << numero1 << ") não é menor ou igual ao segundo número (" << numero2 << ")." << std::endl;
+    }
+
+    return 0;
+}
+
+J)
+
+#include <iostream>
+
+int main() {
+    // Declaração da variável para armazenar o número inteiro
+    int numero;
+
+    // Solicita ao usuário para digitar um número inteiro
+    std::cout << "Digite um número inteiro: ";
+    std::cin >> numero;
+
+    // Verifica se o número é positivo
+    if (numero > 0) {
+        std::cout << "O número " << numero << " é positivo." << std::endl;
+    } else {
+        std::cout << "O número " << numero << " não é positivo." << std::endl;
+    }
+
+    return 0;
+}
+
+K)
+
+#include <iostream>
+
+int main() {
+    // Declaração da variável para armazenar o número inteiro
+    int numero;
+
+    // Solicita ao usuário para digitar um número inteiro
+    std::cout << "Digite um número inteiro: ";
+    std::cin >> numero;
+
+    // Verifica se o número é negativo
+    if (numero < 0) {
+        std::cout << "O número " << numero << " é negativo." << std::endl;
+    } else {
+        std::cout << "O número " << numero << " não é negativo." << std::endl;
+    }
+
+    return 0;
+}
+
+L)
+
+#include <iostream>
+#include <cmath>  // Para usar a função std::abs
+
+int main() {
+    // Declaração das variáveis para armazenar os números
+    int numero1, numero2;
+
+    // Solicita ao usuário para digitar o primeiro número
+    std::cout << "Digite o primeiro número inteiro: ";
+    std::cin >> numero1;
+
+    // Solicita ao usuário para digitar o segundo número
+    std::cout << "Digite o segundo número inteiro: ";
+    std::cin >> numero2;
+
+    // Calcula a diferença absoluta entre os dois números
+    int diferenca = std::abs(numero1 - numero2);
+
+    // Verifica se a diferença é menor ou igual a 10
+    if (diferenca <= 10) {
+        std::cout << "A diferença entre " << numero1 << " e " << numero2 << " é menor ou igual a 10." << std::endl;
+    } else {
+        std::cout << "A diferença entre " << numero1 << " e " << numero2 << " é maior que 10." << std::endl;
+    }
+
+    return 0;
+}
+
+
+M)
+
+#include <iostream>
+
+int main() {
+    // Declaração da variável para armazenar o mês escolhido
+    int mes;
+
+    // Apresenta o menu com as opções dos meses do ano
+    std::cout << "Escolha um mês (1 a 12):" << std::endl;
+    std::cout << "1. Janeiro" << std::endl;
+    std::cout << "2. Fevereiro" << std::endl;
+    std::cout << "3. Março" << std::endl;
+    std::cout << "4. Abril" << std::endl;
+    std::cout << "5. Maio" << std::endl;
+    std::cout << "6. Junho" << std::endl;
+    std::cout << "7. Julho" << std::endl;
+    std::cout << "8. Agosto" << std::endl;
+    std::cout << "9. Setembro" << std::endl;
+    std::cout << "10. Outubro" << std::endl;
+    std::cout << "11. Novembro" << std::endl;
+    std::cout << "12. Dezembro" << std::endl;
+    std::cout << "Digite o número do mês escolhido: ";
+    std::cin >> mes;
+
+    // Verifica a quantidade de dias do mês escolhido
+    switch (mes) {
+        case 1:  // Janeiro
+        case 3:  // Março
+        case 5:  // Maio
+        case 7:  // Julho
+        case 8:  // Agosto
+        case 10: // Outubro
+        case 12: // Dezembro
+            std::cout << "O mês escolhido tem 31 dias." << std::endl;
+            break;
+        case 4:  // Abril
+        case 6:  // Junho
+        case 9:  // Setembro
+        case 11: // Novembro
+            std::cout << "O mês escolhido tem 30 dias." << std::endl;
+            break;
+        case 2:  // Fevereiro
+            std::cout << "O mês escolhido tem 28 ou 29 dias." << std::endl;
+            std::cout << "Fevereiro tem 28 dias em anos comuns e 29 dias em anos bissextos." << std::endl;
+            break;
+        default:
+            std::cout << "Número de mês inválido. Por favor, escolha um número entre 1 e 12." << std::endl;
+            break;
+    }
+
+    return 0;
+}
+
+N)
+
+#include <iostream>
+
+int main() {
+    // Declaração das variáveis
+    int idade;
+    char temCarteira;
+
+    // Solicita ao usuário para digitar a idade
+    std::cout << "Digite sua idade: ";
+    std::cin >> idade;
+
+    // Solicita ao usuário se possui carteira de motorista
+    std::cout << "Você tem carteira de motorista? (s para sim / n para não): ";
+    std::cin >> temCarteira;
+
+    // Verifica se o usuário pode dirigir
+    if (idade > 18 && (temCarteira == 's' || temCarteira == 'S')) {
+        std::cout << "Você pode dirigir." << std::endl;
+    } else {
+        std::cout << "Você não pode dirigir." << std::endl;
+    }
+
+    return 0;
+}
+
+
+O)
+
+#include <iostream>
+
+int main() {
+    // Declaração das variáveis
+    char desejaComprar;
+    double dinheiroDisponivel;
+    double precoCarro = 30000.00; // Exemplo de preço do carro novo
+
+    // Solicita ao usuário se deseja comprar um carro novo
+    std::cout << "Você deseja comprar um carro novo? (s para sim / n para não): ";
+    std::cin >> desejaComprar;
+
+    // Solicita ao usuário quanto dinheiro ele tem disponível
+    std::cout << "Digite o valor do dinheiro disponível: ";
+    std::cin >> dinheiroDisponivel;
+
+    // Verifica se o usuário pode comprar o carro
+    if ((desejaComprar == 's' || desejaComprar == 'S') && dinheiroDisponivel >= precoCarro) {
+        std::cout << "Parabéns, você pode comprar um carro novo!" << std::endl;
+    } else {
+        std::cout << "Você não pode comprar um carro novo no momento." << std::endl;
+    }
+
+    return 0;
+}
+
+P)
+
+#include <iostream>
+
+int main() {
+    // Declaração das variáveis
+    char possuiDiploma;
+    int idade;
+
+    // Solicita ao usuário se possui um diploma de ensino superior
+    std::cout << "Você possui um diploma de ensino superior? (s para sim / n para não): ";
+    std::cin >> possuiDiploma;
+
+    // Solicita ao usuário a idade
+    std::cout << "Digite sua idade: ";
+    std::cin >> idade;
+
+    // Verifica se o usuário está qualificado para a vaga
+    if ((possuiDiploma == 's' || possuiDiploma == 'S') && idade > 21) {
+        std::cout << "Parabéns, você está qualificado para a vaga!" << std::endl;
+    } else {
+        std::cout << "Você não está qualificado para a vaga." << std::endl;
+    }
+
+    return 0;
+}
+
+Q)
+
+#include <iostream>
+
+int main() {
+    // Declaração das variáveis
+    char assinante;
+    char assistiuSerie;
+
+    // Solicita ao usuário se é assinante de um serviço de streaming
+    std::cout << "Você é assinante de um serviço de streaming? (s para sim / n para não): ";
+    std::cin >> assinante;
+
+    // Solicita ao usuário se já assistiu à série específica
+    std::cout << "Você já assistiu à série específica? (s para sim / n para não): ";
+    std::cin >> assistiuSerie;
+
+    // Verifica se o usuário pode assistir à nova temporada
+    if ((assinante == 's' || assinante == 'S') && (assistiuSerie == 's' || assistiuSerie == 'S')) {
+        std::cout << "Ótimo, agora você pode assistir à nova temporada!" << std::endl;
+    } else {
+        std::cout << "Você não pode assistir à nova temporada." << std::endl;
+    }
+
+    return 0;
+}
+
+R)
+
+#include <iostream>
+#include <string>
+
+int main() {
+    // Declaração das variáveis
+    std::string nome;
+    int idade;
+
+    // Solicita ao usuário para digitar o nome
+    std::cout << "Digite seu nome: ";
+    std::getline(std::cin, nome);  // Lê o nome completo, incluindo espaços
+
+    // Solicita ao usuário para digitar a idade
+    std::cout << "Digite sua idade: ";
+    std::cin >> idade;
+
+    // Verifica se o nome tem mais de 3 caracteres e se a idade é maior ou igual a 18
+    if (nome.length() > 3 && idade >= 18) {
+        std::cout << "Acesso permitido" << std::endl;
+    } else {
+        std::cout << "Acesso negado" << std::endl;
+    }
+
+    return 0;
+}
+
+T )
+
+#include <iostream>
+
+int main() {
+    // Declaração da variável
+    int numero;
+
+    // Solicita ao usuário para digitar um número inteiro
+    std::cout << "Digite um número inteiro: ";
+    std::cin >> numero;
+
+    // Verifica se o número é divisível por 3 ou por 5
+    if (numero % 3 == 0 || numero % 5 == 0) {
+        std::cout << "O número é divisível por 3 ou por 5!" << std::endl;
+    } else {
+        std::cout << "O número não é divisível por 3 nem por 5." << std::endl;
+    }
+
+    return 0;
+}
+
+
+U) 
+
+#include <iostream>
+#include <string>
+
+int main() {
+    // Declaração da variável
+    std::string resposta;
+
+    // Solicita ao usuário se deseja comprar um produto
+    std::cout << "Você deseja comprar um produto? (sim / s): ";
+    std::cin >> resposta;
+
+    // Verifica se a resposta é "sim" ou "s"
+    if (resposta == "sim" || resposta == "s") {
+        std::cout << "Obrigado pela compra!" << std::endl;
+    } else {
+        std::cout << "Obrigado pela visita!" << std::endl;
+    }
+
+    return 0;
+}
+
+V)
+
+#include <iostream>
+#include <string>
+
+int main() {
+    // Declaração da variável
+    std::string nome;
+
+    // Solicita ao usuário para digitar o nome
+    std::cout << "Digite seu nome: ";
+    std::getline(std::cin, nome);  // Lê a linha completa, permitindo nomes com espaços
+
+    // Verifica se o nome é "Wilson" ou "Gloria"
+    if (nome == "Wilson" || nome == "Gloria") {
+        std::cout << "Olá, bem-vindo(a) de volta!" << std::endl;
+    } else {
+        std::cout << "Nome não reconhecido." << std::endl;
+    }
+
+    return 0;
+}
+
+
+
+W) #include <iostream>
+
+int main() {
+    // Solicita ao usuário que insira um número inteiro
+    int numero;
+    std::cout << "Digite um número inteiro: ";
+    std::cin >> numero;
+
+    // Verifica se o número é maior do que 10 ou menor do que 0
+    if (numero > 10 || numero < 0) {
+        std::cout << "Número inválido!" << std::endl;
+    } else {
+        std::cout << "Número válido." << std::endl; // Este trecho pode ser removido se não for necessário
+    }
+
+    return 0;
+}
+
+X) 
+
+#include <iostream>
+#include <string>
+
+int main() {
+    // Declaração da variável para armazenar a resposta do usuário
+    std::string resposta;
+
+    // Solicita ao usuário que informe se ele não é um robô
+    std::cout << "Você não é um robô? (sim/nao): ";
+    std::cin >> resposta;
+
+    // Verifica a resposta do usuário
+    if (resposta == "nao" || resposta == "NAO" || resposta == "Não" || resposta == "não") {
+        std::cout << "Por favor, prove que você não é um robô" << std::endl;
+    } else {
+        std::cout << "Obrigado por confirmar!" << std::endl;
+    }
+
+    return 0;
+}
+
+
+Y)
+
+#include <iostream>
+
+int main() {
+    // Declaração da variável para armazenar o número inserido pelo usuário
+    int numero;
+
+    // Solicita ao usuário que insira um número
+    std::cout << "Digite um número: ";
+    std::cin >> numero;
+
+    // Verifica se o número é diferente de zero
+    if (numero != 0) {
+        std::cout << "O número é diferente de zero" << std::endl;
+    }
+
+    return 0;
+}
+
+Z) 
+
+#include <iostream>
+#include <string>
+
+int main() {
+    // Declaração da variável para armazenar a resposta do usuário
+    std::string resposta;
+
+    // Solicita ao usuário que informe se ele não é um membro inativo
+    std::cout << "Você não é um membro inativo do clube? (sim/nao): ";
+    std::cin >> resposta;
+
+    // Verifica a resposta do usuário
+    if (resposta == "nao" || resposta == "NAO" || resposta == "Não" || resposta == "não") {
+        std::cout << "Por favor, atualize sua inscrição para continuar usufruindo dos benefícios do clube" << std::endl;
+    } else {
+        std::cout << "Obrigado por confirmar!" << std::endl; // Mensagem opcional
+    }
+
+    return 0;
+}
+
+AA)
+
+#include <iostream>
+#include <string>
+
+int main() {
+    // Declaração da variável para armazenar a palavra inserida pelo usuário
+    std::string palavra;
+
+    // Solicita ao usuário que insira uma palavra
+    std::cout << "Digite uma palavra: ";
+    std::cin >> palavra;
+
+    // Verifica se a palavra não é vazia
+    if (!palavra.empty()) {
+        std::cout << "A palavra não é vazia" << std::endl;
+    }
+
+    return 0;
+}
+ 
+
+BB)
+
+#include <iostream>
+#include <string>
+
+int main() {
+    // Declaração da variável para armazenar a resposta do usuário
+    std::string resposta;
+
+    // Solicita ao usuário que informe se ele não deseja cancelar a operação
+    std::cout << "Você não deseja cancelar a operação? (sim/nao): ";
+    std::cin >> resposta;
+
+    // Verifica a resposta do usuário
+    if (resposta == "nao" || resposta == "NAO" || resposta == "Não" || resposta == "não") {
+        std::cout << "Por favor, confirme o cancelamento da operação" << std::endl;
+    } else {
+        std::cout << "Operação continuará conforme solicitado." << std::endl; // Mensagem opcional
+    }
+
+    return 0;
+}
+
+
+CC)
+
+#include <iostream>
+
+int main() {
+    // Declaração das variáveis para armazenar os lados do triângulo
+    double lado1, lado2, lado3;
+
+    // Solicita ao usuário que insira os lados do triângulo
+    std::cout << "Digite o comprimento do primeiro lado: ";
+    std::cin >> lado1;
+    std::cout << "Digite o comprimento do segundo lado: ";
+    std::cin >> lado2;
+    std::cout << "Digite o comprimento do terceiro lado: ";
+    std::cin >> lado3;
+
+    // Verifica se os lados formam um triângulo válido
+    if ((lado1 + lado2 > lado3) && (lado1 + lado3 > lado2) && (lado2 + lado3 > lado1)) {
+        // Determina o tipo do triângulo
+        if (lado1 == lado2 && lado2 == lado3) {
+            std::cout << "O triângulo é equilátero." << std::endl;
+        } else if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3) {
+            std::cout << "O triângulo é isósceles." << std::endl;
+        } else {
+            std::cout << "O triângulo é escaleno." << std::endl;
+        }
+    } else {
+        std::cout << "Os valores fornecidos não formam um triângulo válido." << std::endl;
+    }
+
+    return 0;
+}

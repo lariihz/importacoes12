@@ -1,0 +1,376 @@
+NUMERO 4 
+
+ATIVIDADE 4 
+Comando ESCOLHA
+
+A)
+
+#include <iostream>
+
+int main() {
+    // Declaração da variável para armazenar a opção do usuário
+    int opcao;
+
+    // Exibe o menu para o usuário
+    std::cout << "Escolha uma opção para exibir uma mensagem para o horário do dia:" << std::endl;
+    std::cout << "1. Bom dia" << std::endl;
+    std::cout << "2. Boa tarde" << std::endl;
+    std::cout << "3. Boa noite" << std::endl;
+    std::cout << "Digite a opção (1, 2 ou 3): ";
+    std::cin >> opcao;
+
+    // Verifica a opção escolhida e exibe a mensagem correspondente
+    switch (opcao) {
+        case 1:
+            std::cout << "Bom dia! Espero que você tenha um ótimo dia!" << std::endl;
+            break;
+        case 2:
+            std::cout << "Boa tarde! Aproveite o restante do seu dia!" << std::endl;
+            break;
+        case 3:
+            std::cout << "Boa noite! Tenha uma boa noite de descanso!" << std::endl;
+            break;
+        default:
+            std::cout << "Opção inválida! Por favor, escolha uma opção entre 1 e 3." << std::endl;
+            break;
+    }
+
+    return 0;
+}
+
+B)
+
+#include <iostream>
+
+int main() {
+    // Declaração das variáveis
+    int opcao;
+    double num1, num2, resultado;
+
+    // Exibe o menu de operações
+    std::cout << "Escolha uma operação:" << std::endl;
+    std::cout << "1. Adição" << std::endl;
+    std::cout << "2. Subtração" << std::endl;
+    std::cout << "3. Multiplicação" << std::endl;
+    std::cout << "4. Divisão" << std::endl;
+    std::cout << "Digite a opção (1, 2, 3 ou 4): ";
+    std::cin >> opcao;
+
+    // Solicita os dois números ao usuário
+    std::cout << "Digite o primeiro número: ";
+    std::cin >> num1;
+    std::cout << "Digite o segundo número: ";
+    std::cin >> num2;
+
+    // Executa a operação escolhida
+    switch (opcao) {
+        case 1:
+            resultado = num1 + num2;
+            std::cout << "Resultado da adição: " << resultado << std::endl;
+            break;
+        case 2:
+            resultado = num1 - num2;
+            std::cout << "Resultado da subtração: " << resultado << std::endl;
+            break;
+        case 3:
+            resultado = num1 * num2;
+            std::cout << "Resultado da multiplicação: " << resultado << std::endl;
+            break;
+        case 4:
+            if (num2 != 0) { // Verifica se o divisor é zero
+                resultado = num1 / num2;
+                std::cout << "Resultado da divisão: " << resultado << std::endl;
+            } else {
+                std::cout << "Erro: Divisão por zero não é permitida." << std::endl;
+            }
+            break;
+        default:
+            std::cout << "Opção inválida! Por favor, escolha uma opção entre 1 e 4." << std::endl;
+            break;
+    }
+
+    return 0;
+}
+
+C)
+
+#include <iostream>
+#include <string>
+
+int main() {
+    // Declaração da variável para armazenar a escolha do dia
+    int dia;
+
+    // Exibe o menu de dias da semana
+    std::cout << "Escolha um dia da semana (1 a 7):" << std::endl;
+    std::cout << "1. Domingo" << std::endl;
+    std::cout << "2. Segunda-feira" << std::endl;
+    std::cout << "3. Terça-feira" << std::endl;
+    std::cout << "4. Quarta-feira" << std::endl;
+    std::cout << "5. Quinta-feira" << std::endl;
+    std::cout << "6. Sexta-feira" << std::endl;
+    std::cout << "7. Sábado" << std::endl;
+    std::cout << "Digite o número correspondente ao dia: ";
+    std::cin >> dia;
+
+    // Determina se o dia é útil ou final de semana
+    switch (dia) {
+        case 1: // Domingo
+        case 7: // Sábado
+            std::cout << "É final de semana!" << std::endl;
+            break;
+        case 2: // Segunda-feira
+        case 3: // Terça-feira
+        case 4: // Quarta-feira
+        case 5: // Quinta-feira
+        case 6: // Sexta-feira
+            std::cout << "É dia útil!" << std::endl;
+            break;
+        default:
+            std::cout << "Opção inválida! Por favor, escolha um número entre 1 e 7." << std::endl;
+            break;
+    }
+
+    return 0;
+}
+
+D)
+
+#include <iostream>
+
+int main() {
+    // Declaração da variável para armazenar a escolha do usuário
+    int escolha;
+
+    // Exibe o menu de opções de animais
+    std::cout << "Escolha um animal:" << std::endl;
+    std::cout << "1. Cachorro" << std::endl;
+    std::cout << "2. Gato" << std::endl;
+    std::cout << "3. Pássaro" << std::endl;
+    std::cout << "Digite o número correspondente ao animal: ";
+    std::cin >> escolha;
+
+    // Exibe uma mensagem com base na escolha do usuário
+    switch (escolha) {
+        case 1:
+            std::cout << "Você escolheu um cachorro! Eles são ótimos companheiros e amigos leais." << std::endl;
+            break;
+        case 2:
+            std::cout << "Você escolheu um gato! Eles são independentes e têm uma personalidade única." << std::endl;
+            break;
+        case 3:
+            std::cout << "Você escolheu um pássaro! Eles são conhecidos por sua beleza e canto melodioso." << std::endl;
+            break;
+        default:
+            std::cout << "Opção inválida! Por favor, escolha um número entre 1 e 3." << std::endl;
+            break;
+    }
+
+    return 0;
+}
+
+E)
+
+#include <iostream>
+
+int main() {
+    // Declaração da variável para armazenar a escolha do usuário
+    int opcao;
+
+    // Exibe o menu de opções de velocidade
+    std::cout << "Escolha uma opção de velocidade:" << std::endl;
+    std::cout << "1. Baixa" << std::endl;
+    std::cout << "2. Média" << std::endl;
+    std::cout << "3. Alta" << std::endl;
+    std::cout << "Digite o número correspondente à velocidade: ";
+    std::cin >> opcao;
+
+    // Exibe uma mensagem com base na escolha do usuário
+    switch (opcao) {
+        case 1:
+            std::cout << "Limite de velocidade permitido: 30 km/h." << std::endl;
+            break;
+        case 2:
+            std::cout << "Limite de velocidade permitido: 60 km/h." << std::endl;
+            break;
+        case 3:
+            std::cout << "Limite de velocidade permitido: 120 km/h." << std::endl;
+            break;
+        default:
+            std::cout << "Opção inválida! Por favor, escolha um número entre 1 e 3." << std::endl;
+            break;
+    }
+
+    return 0;
+}
+
+
+F-6)
+
+#include <iostream>
+
+int main() {
+    // Declaração da variável para armazenar a escolha do usuário
+    char tamanho;
+
+    // Exibe o menu de tamanhos de camisetas
+    std::cout << "Escolha o tamanho da camiseta:" << std::endl;
+    std::cout << "P - Pequeno" << std::endl;
+    std::cout << "M - Médio" << std::endl;
+    std::cout << "G - Grande" << std::endl;
+    std::cout << "Digite o tamanho da camiseta (P, M, G): ";
+    std::cin >> tamanho;
+
+    // Exibe o preço da camiseta baseado no tamanho escolhido
+    switch (tamanho) {
+        case 'P':
+        case 'p':
+            std::cout << "Preço da camiseta tamanho P: R$ 30,00" << std::endl;
+            break;
+        case 'M':
+        case 'm':
+            std::cout << "Preço da camiseta tamanho M: R$ 40,00" << std::endl;
+            break;
+        case 'G':
+        case 'g':
+            std::cout << "Preço da camiseta tamanho G: R$ 50,00" << std::endl;
+            break;
+        default:
+            std::cout << "Tamanho inválido! Por favor, escolha P, M ou G." << std::endl;
+            break;
+    }
+
+    return 0;
+}
+
+G-7)
+
+#include <iostream>
+
+int main() {
+    // Declaração das variáveis
+    int opcao;
+    double saldo = 1000.00;  // Saldo inicial
+    double valor;
+
+    // Exibe o menu de operações do caixa eletrônico
+    std::cout << "Escolha uma operação:" << std::endl;
+    std::cout << "1. Saque" << std::endl;
+    std::cout << "2. Depósito" << std::endl;
+    std::cout << "3. Consulta de Saldo" << std::endl;
+    std::cout << "Digite o número da operação: ";
+    std::cin >> opcao;
+
+    switch (opcao) {
+        case 1: // Saque
+            std::cout << "Digite o valor do saque: ";
+            std::cin >> valor;
+            if (valor > saldo) {
+                std::cout << "Saldo insuficiente!" << std::endl;
+            } else {
+                saldo -= valor;
+                std::cout << "Saque realizado com sucesso! Novo saldo: R$ " << saldo << std::endl;
+            }
+            break;
+        case 2: // Depósito
+            std::cout << "Digite o valor do depósito: ";
+            std::cin >> valor;
+            saldo += valor;
+            std::cout << "Depósito realizado com sucesso! Novo saldo: R$ " << saldo << std::endl;
+            break;
+        case 3: // Consulta de Saldo
+            std::cout << "Saldo atual: R$ " << saldo << std::endl;
+            break;
+        default:
+            std::cout << "Opção inválida! Por favor, escolha 1, 2 ou 3." << std::endl;
+            break;
+    }
+
+    return 0;
+}
+
+
+H-8)
+
+#include <iostream>
+
+int main() {
+    // Declaração da variável para armazenar a escolha do idioma
+    int idioma;
+
+    // Exibe o menu de idiomas
+    std::cout << "Escolha um idioma:" << std::endl;
+    std::cout << "1. Português" << std::endl;
+    std::cout << "2. Inglês" << std::endl;
+    std::cout << "Digite o número correspondente ao idioma: ";
+    std::cin >> idioma;
+
+    // Exibe a mensagem de boas-vindas com base no idioma escolhido
+    switch (idioma) {
+        case 1:
+            std::cout << "Bem-vindo!" << std::endl;
+            break;
+        case 2:
+            std::cout << "Welcome!" << std::endl;
+            break;
+        default:
+            std::cout << "Opção inválida! Por favor, escolha 1 para Português ou 2 para Inglês." << std::endl;
+            break;
+    }
+
+    return 0;
+}
+
+
+J-9) 
+
+#include <iostream>
+
+int main() {
+    // Declaração da variável para armazenar a escolha do mês
+    int mes;
+
+    // Exibe o menu de meses do ano
+    std::cout << "Escolha um mês (1 a 12):" << std::endl;
+    std::cout << "1. Janeiro" << std::endl;
+    std::cout << "2. Fevereiro" << std::endl;
+    std::cout << "3. Março" << std::endl;
+    std::cout << "4. Abril" << std::endl;
+    std::cout << "5. Maio" << std::endl;
+    std::cout << "6. Junho" << std::endl;
+    std::cout << "7. Julho" << std::endl;
+    std::cout << "8. Agosto" << std::endl;
+    std::cout << "9. Setembro" << std::endl;
+    std::cout << "10. Outubro" << std::endl;
+    std::cout << "11. Novembro" << std::endl;
+    std::cout << "12. Dezembro" << std::endl;
+    std::cout << "Digite o número correspondente ao mês: ";
+    std::cin >> mes;
+
+    // Exibe a quantidade de dias do mês escolhido
+    switch (mes) {
+        case 1: // Janeiro
+        case 3: // Março
+        case 5: // Maio
+        case 7: // Julho
+        case 8: // Agosto
+        case 10: // Outubro
+        case 12: // Dezembro
+            std::cout << "O mês escolhido tem 31 dias." << std::endl;
+            break;
+        case 4: // Abril
+        case 6: // Junho
+        case 9: // Setembro
+        case 11: // Novembro
+            std::cout << "O mês escolhido tem 30 dias." << std::endl;
+            break;
+        case 2: // Fevereiro
+            std::cout << "O mês escolhido tem 28 ou 29 dias, dependendo se é um ano bissexto." << std::endl;
+            break;
+        default:
+            std::cout << "Mês inválido! Por favor, escolha um número entre 1 e 12." << std::endl;
+            break;
+    }
+
+    return 0;
+}
